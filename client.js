@@ -12,7 +12,7 @@ const connect = () => {
 
   conn.setEncoding("utf8");
   conn.on("data", data => {
-    console.log("server says: ", data);
+    typewrite(data);
   });
 
   conn.on("connect", () => {
